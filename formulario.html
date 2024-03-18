@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-<body>
+<body bgcolor="A075FE">
     <form action=""></form>
     <label for="Nombre"></label>
     <span>Nombre</span>
-    <input type="text">
+    <input type="text" id="Nombre" autocomplete="nombre">
 
     <br><br><label for="Apellido"></label>
     <span>Apellido</span>
-    <input type="text">
+    <input type="text" id="nombre" autocomplete="apellido">
 
     <br><br><label for="Fecha de nacimiento"></label>
     <span>Fecha de nacimiento</span>
     <input type="date">
-   
+
     <br><br><label for="sexo"></label>
-    <span>sexo</span>
-    <input type="radio"value="h" required>Masculino
-    <input type="radio"value="m" required>femenino
+    <span>sexo:</span>
+    <input type="radio"value="f" required>femenino
+    <input type="radio"value="m" required>masculino 
 
     <br><br><label for="correo electronico"></label>
     <span>correo electronico</span><br>
@@ -32,6 +32,22 @@
 <span>numero de documento</span>
    <input type="text"><br>
    <input type="radio" value="t"required> TI 
-   <input type="radio" value="c"required>CC
+   <input type="radio" value="c"required> CC
+
+   <br><br><span>en que ciudad te ubicas</span>
+   <input list="ciudad"
+   <option value="Medellin"
+   <option value="bogota"
+   <option value="cali"
+   <option value="barranquilla"
+   <option value="bucaramanga"
+   <option value="pereira"
+   <option value="santa marta"
+   <option value="manizales"
+   <option value="pasto"
+   <option value="villavicencio"
+   <option value="monteria"
+   <option value="neiva"
+   <option value="armenia"
 </body>
 </html>
