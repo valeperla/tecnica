@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(255, 246, 233);">  
+    <H2 style="color: hwb(43 13% 15%);"> Ingrese la información solicitada </H2>
+    <fieldset> 
+        <legend style="color: darkgoldenrod;">Datos:</legend>
+        <form action="">
+        <form action="/action_page.php">
+            <label for="fname">Primer nombre:</label><br>
+            <input type="text" id="primer nombre" name="primer nombre" autocomplete="name" required/><br>
+            <label for="lname">Primer apellido:</label><br>
+            <input type="text" id="primer apellido" name="primer apellido" autocomplete="name" required><br>
+    
+         <H2 style="color: hwb(43 13% 15%);"> Tipo de documento </H2>
+    
+            <input type="radio" id="Cedula" name="fav_language" value="Cedula">
+            <label for="Cedula">Cedula</label><br>
+            <input type="radio" id="TI" name="fav_language" value="TI">
+            <label for="TI">TI</label><br>
+            <input type="radio" id="Pasaporte Extranjero" name="fav_language" value="PasaporteExtranjero">
+            <label for="Pasaporte Extranjero">Pasaporte Extranjero</label>
+            <h3 style="color: hwb(43 13% 15%);"> Ingrese su numero de documento </h3>
+            <label for="Numero De Documento">Numero De Documento:</label><br>
+            <input type="text" id="Numero De Documento" name="Numero De Documento" autocomplete="name" required>
+    
+            <h2 style="color: hwb(43 13% 15%);"> Sexo </h2>
+    
+            <input type="radio" id="Hombre" name="fav_language" value="Hombre">
+            <label for="Hombre">Hombre</label><br>
+            <input type="radio" id="Mujer" name="fav_language" value="Mujer">
+            <label for="Mujer">Mujer</label><br>
+            <input type="radio" id="Prefiero no especificar" name="fav_language" value="JPrefiero no especificar">
+            <label for="Prefiero no especificar">Prefiero no especificar</label>
+            <h2 style="color: hwb(43 13% 15%);"> Fecha de nacimiento</h2>
+        
+            <label for="birthday">Fecha de nacimiento
+                <input type="date" id="birthday" name="birthday" autocomplete="name" required>
+            </label>
+
+<form action="/action_page.php">
+  <p style="color:hwb(43 13% 15%) ;"><label for="w3review">Opiniones del formulario</label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50">Escribe Aqui</textarea>
+  <br>
+  <h2 style="color: hwb(43 13% 15%);"> Eso es todo mi fai </h2>
+  <br>
+  <input type="submit" value="Submit">
+        
+    </fieldset>
+    </form>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
